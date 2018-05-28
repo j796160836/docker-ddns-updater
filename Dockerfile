@@ -4,6 +4,8 @@ ADD "my-ddns" "/opt/my-ddns"
 
 WORKDIR "/opt/my-ddns"
 
-RUN npm install
+RUN apk update --no-cache; \
+    apk add --no-cache ca-certificates; \
+    npm install
 
 CMD ["/bin/sh", "-c", "npm start"]
