@@ -1,0 +1,11 @@
+{
+ "domains": [{
+   "service": "namecheap",
+   "name": "example.com",
+   "hosts": ["@", "www"],
+   "settings": {
+     "password": "NAMECHEAP_API_KEY"
+   }
+ }],
+ "interval": { "days": 1 }
+}
